@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive App Landing page </title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 <nav>
@@ -16,32 +18,96 @@
 <p>Simple responsive website with html, css & js</p>
 <a href="#contact">Getting in Touch</a>
 </div>
-<div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+<div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
     style="height: 100%; width: 100%;">
     <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
       style="stroke: none; fill: #08f;"></path>
   </svg></div>
 </heard>
-<section class="wave content site">
+<section class="container wave site">
 <img src="/img/static.svg" alt="The Works Pizza">
 <div class="content-text">
 <h2 class="title left">Title Section 1</h2>
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni ducimus fugit quo? Natus minus nihil temporibus sequi qui explicabo non eveniet quaerat veniam hic vero sapiente, enim recusandae obcaecati totam.</p>
-<a href="" class="about">Read more</a>
+<a href="" class="btn">Read more</a>
 </div>
 
 </section>
 <section class="info">
-<div class="content">
+<div class="container">
 <h2 class="title left">Title Section2 Info</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem fugit molestiae incidunt accusamus, doloribus odit dolorem recusandae deserunt qui nobis vel totam quam autem cumque officia magni nesciunt ipsam!</p>
 </div>
 </section>
-<section class="">
+<section class="container cards">
+<h2 class="title">Our Services</h2>
+<div class="content cards">
+<article class="card">
+  <i class='bx bx-user'></i>
+  <h3>Title Card 1</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+ <a href="" class="btn">Read More</a>
+</article>
+<article class="card">
+  <i class='bx bx-user'></i>
+  <h3>Title Card 1</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <a href="" class="btn">Read More</a>
+</article>
+<article class="card">
+  <i class='bx bx-user'></i>
+  <h3>Title Card 1</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <a href="" class="btn">Read More</a>
+</article>
+</div>
+</section>
+
+<section class="work">
+<h2 class="title">Portfolio</h2>
+<article>
+<img src="/img/pizza-2.jpeg" alt="">
+<img src="/img/pizza-3.jpeg" alt="">
+<img src="/img/pizza-6.jpeg" alt="">
+<img src="/img/vegg.jpeg" alt="">
+<img src="/img/veggie-1.jpeg" alt="">
+<img src="/img/static.svg" alt="">
+<img src="/img/pizza-2.jpeg" alt="">
+<img src="/img/static.svg" alt="">
+</article>
+</section>
+
+<section class="info-last">
+<div class="container last-section">
+<h2 class="title left">Title Section Info Last</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<a href="" class="btn">Read more</a>
+</div>
+<img src="/img/hamburger.svg" alt="">
+<div class="svg-wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+    style="height: 100%; width: 100%;">
+    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+      style="stroke: none; fill: #08f;"></path>
+  </svg></div>
+</section>
+<section>
 
 </section>
 
-<section></section>
+<footer id="contact">
+  <div class="container">
+  <h2 class="title">Contact Us</h2>
+  <form action="" class="form">
+  <input class="input" type="text" name="" id="" placeholder="Name">
+  <input class="input" type="email" name="" id="" placeholder="Email">
+  <textarea name="" id="" cols="40" rows="10" placeholder="Message"></textarea>
+  <input class="input" type="submit" value="send">
+</form>
+  </div>
+
+</footer>
   
+
+
 </body>
 </html>
