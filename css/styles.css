@@ -18,6 +18,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: var(--ff-roboto);
 	font-size: var(--ff-size);
@@ -48,4 +51,54 @@ img {
 	display: block;
 	max-width: 100%;
 }
-/*=======HEADER==========*/
+/*=======HERO==========*/
+.hero-img {
+	background-image: linear-gradient(
+			-225deg,
+			hsla(177, 76%, 44%, 0.246) 0%,
+			hsla(63, 44%, 52%, 0.253) 100%
+		),
+		url('../img/pizza-6.jpeg');
+	height: 90vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+}
+.text-hero {
+	height: 500px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-hero h1 {
+	font-size: 4rem;
+}
+.text-hero p {
+	font-size: 1rem;
+}
+
+.text-hero a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 12px 15px;
+	background: #5d9fff;
+	border-radius: 0.5rem;
+	color: var(--clr-white);
+}
+.svg-hero {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*=======SECTION==========*/
+
+/*=======FOOTER==========*/
