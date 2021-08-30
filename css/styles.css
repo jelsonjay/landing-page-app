@@ -199,10 +199,35 @@ title.right {
 }
 .work-content {
 	display: flex;
+	width: 100%;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
+	overflow: hidden;
 }
 .work-content > img {
-	width: 100%;
+	width: 30%;
+	object-fit: cover;
+	margin-bottom: 20px;
+	display: block;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	cursor: pointer;
 }
-
-/*========FOOTER==========*/
+/*========LAST INFO==========*/
+.last-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 40px;
+}
+.last-section img {
+	width: 48%;
+}
+.last-section .container-main-text {
+	width: 40%;
+}
+/*==========FOOTER==========*/
+footer {
+	background-color: #06a19a;
+	color: var(--clr-white);
+}
