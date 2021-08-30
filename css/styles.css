@@ -90,9 +90,6 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-	#btn-mobile {
-		display: block;
-	}
 	#menu {
 		display: block;
 		position: absolute;
@@ -116,6 +113,42 @@ a:hover {
 		padding: 1rem 0;
 		margin: 0 1rem;
 		border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+	}
+	#btn-mobile {
+		display: flex;
+		padding: 0.5rem 1rem;
+		font-size: 1rem;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+	#hamburger {
+		display: block;
+		width: 20px;
+		border-top: 2px solid;
+	}
+	#hamburger::after,
+	#hamburger::before {
+		content: '';
+		width: 20px;
+		display: block;
+		height: 2px;
+		background-color: currentColor;
+		margin-top: 5px;
+		transition: 0.3s;
+		position: relative;
+	}
+
+	#nav.active #hamburger {
+		border-top-color: transparent;
+	}
+	#nav.active #hamburger::before {
+		transform: rotate(135deg);
+	}
+
+	#nav.active #hamburger::after {
+		transform: rotate(-135deg);
+		top: -7px;
 	}
 }
 

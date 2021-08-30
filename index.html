@@ -17,23 +17,23 @@
 
 
 <header id="header">
-<a id="logo" href="">Pizza</a>
+<a id="logo" href="#home">Pizza</a>
 <nav id="nav">
 <button id="btn-mobile">Menu
 <span id="hamburger"></span>
 </button>
-  <ul id="menu">
+  <ul id="menu" role="menu">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#service">Services</a></li>
-    <li><a href="#work">Products</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#products">Products</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
   
 </header>
 
-<section class="hero-img">
+<section class="hero-img" aria-label="Open Menu" id="home" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
 <div class="text-hero">
 <h1>Best pizza in the Town</h1>
 <a href="#contact">Getting in Touch</a>
@@ -45,7 +45,7 @@ style="stroke: none; fill: #fff;"></path>
 </svg></div>
 </section>
 
-<section class="wave-container site">
+<section class="wave-container site" id="about">
 <img src="/img/pizza.svg" alt="The Works Pizza">
 <div class="container-main-text">
 <h2 class="title left">Title Section 1</h2>
@@ -61,7 +61,7 @@ style="stroke: none; fill: #fff;"></path>
 </div>
 </section>
 
-<section class="container cards">
+<section class="container cards" id="services">
 <h2 class="title">Our Services</h2>
 <div class="content-cards">
 <article class="card">
@@ -85,7 +85,7 @@ style="stroke: none; fill: #fff;"></path>
 </div>
 </section>
 
-<section class="work">
+<section class="work" id="products">
 <div class="container">
 <h2 class="title">Portfolio</h2>
 <article class="work-content">
