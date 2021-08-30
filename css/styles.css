@@ -65,11 +65,23 @@ a:hover {
 	font-weight: bold;
 }
 #header {
+	height: 80px;
+	padding: 1rem;
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #5d9fff;
 }
 
 #menu {
 	display: flex;
+	list-style: none;
+	gap: 0.5rem;
+}
+
+#menu a {
+	display: block;
+	padding: 0.5rem;
 }
 
 /*=======HERO==========*/
