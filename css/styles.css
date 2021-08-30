@@ -13,9 +13,9 @@
 	--clr-footer: #5d9fff;
 }
 /*=======RESETS==========*/
-*,
-*::before *::after {
+* {
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 html {
@@ -41,11 +41,6 @@ h3 {
 	line-height: 1;
 	font-weight: 900;
 }
-a {
-	color: var(--clr-black);
-	text-decoration: none;
-	font-size: 1rem;
-}
 
 h2,
 h3,
@@ -57,6 +52,13 @@ img {
 	max-width: 100%;
 }
 /*=======NAVBAR==========*/
+
+a {
+	color: var(--clr-black);
+	text-decoration: none;
+	font-size: 1rem;
+}
+
 a:hover {
 	background-color: rgba(0, 100, 0, 0.5);
 }
@@ -82,6 +84,18 @@ a:hover {
 #menu a {
 	display: block;
 	padding: 0.5rem;
+}
+#btn-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	#btn-mobile {
+		display: block;
+	}
+	#menu {
+		display: none;
+	}
 }
 
 /*=======HERO==========*/
