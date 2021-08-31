@@ -4,6 +4,7 @@
 	--clr-primary-400: #29323c;
 	--clr-secondary: #434343;
 	--clr-white: #fff;
+	--clr-tomato: tomato;
 	--clr-black: #000;
 	--ff-roboto: 'Roboto', sans-serif;
 	--ff-oswald: 'Oswald', sans-serif;
@@ -57,10 +58,12 @@ a {
 	color: var(--clr-black);
 	text-decoration: none;
 	font-size: 1rem;
+	color: #fff;
+	border-radius: 0.5rem;
 }
 
 a:hover {
-	background-color: rgba(0, 100, 0, 0.5);
+	background-color: rgba(218, 102, 7, 0.924);
 }
 #logo {
 	font-size: 2rem;
@@ -74,13 +77,11 @@ a:hover {
 	justify-content: space-between;
 	background-color: #5d9fff;
 }
-
 #menu {
 	display: flex;
 	list-style: none;
 	gap: 0.5rem;
 }
-
 #menu a {
 	display: block;
 	padding: 0.5rem;
@@ -103,7 +104,6 @@ a:hover {
 		visibility: hidden;
 		overflow-y: hidden;
 	}
-
 	#nav.active #menu {
 		height: calc(100vh - 70px);
 		visibility: visible;
@@ -138,14 +138,12 @@ a:hover {
 		transition: 0.3s;
 		position: relative;
 	}
-
 	#nav.active #hamburger {
 		border-top-color: transparent;
 	}
 	#nav.active #hamburger::before {
 		transform: rotate(135deg);
 	}
-
 	#nav.active #hamburger::after {
 		transform: rotate(-135deg);
 		top: -7px;
@@ -156,8 +154,8 @@ a:hover {
 .hero-img {
 	background: linear-gradient(
 			to right,
-			rgba(0, 100, 0, 0.5),
-			rgba(0, 150, 0, 0.4),
+			rgba(238, 149, 7, 0.5),
+			rgba(206, 135, 3, 0.4),
 			rgba(0, 200, 0, 0.5),
 			rgba(0, 255, 0, 0.7)
 		),
@@ -250,7 +248,7 @@ title.right {
 	background-image: linear-gradient(-225deg, #20e2d7 0%, #f9fea5 100%);
 	padding: 0.9rem 1rem;
 	border-radius: 0.5rem;
-	color: var(--clr-white);
+	color: var(--clr-tomato);
 }
 /*=======INFO==========*/
 .info {
