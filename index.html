@@ -22,7 +22,7 @@
 <button id="btn-mobile">Menu
 <span id="hamburger"></span>
 </button>
-  <ul id="menu" role="menu">
+  <ul id="menu" role="menu" aria-label="Open Menu" id="home" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -33,7 +33,7 @@
   
 </header>
 
-<section class="hero-img" aria-label="Open Menu" id="home" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+<section class="hero-img">
 <div class="text-hero">
 <h1>Best pizza in the Town</h1>
 <a href="#contact">Getting in Touch</a>
@@ -53,6 +53,7 @@ style="stroke: none; fill: #fff;"></path>
 <a href="" class="btn">Read more</a>
 </div>
 </section>
+
 
 <section class="info">
 <div class="container">
@@ -123,9 +124,9 @@ style="stroke: none; fill: #fff;"></path>
   <div class="container">
   <h2 class="title">Contact Us</h2>
   <form action="" class="form">
-  <input class="input" type="text" name="" id="" placeholder="Name">
-  <input class="input" type="email" name="" id="" placeholder="Email">
-  <textarea name="" id="" cols="40" rows="10" placeholder="Message"></textarea>
+  <input class="input" type="text" name="" id="" placeholder="Name" required>
+  <input class="input" type="email" name="" id="" placeholder="Email" required>
+  <textarea name="" id="" cols="40" rows="10" placeholder="Message" required></textarea>
   <input class="input" type="submit" value="Send">
 </form>
   </div>
